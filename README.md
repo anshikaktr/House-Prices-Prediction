@@ -1,5 +1,12 @@
-# House-Prices-Prediction
-An end-to-end machine learning project to predict house prices using Linear Regression, Random Forest, XGBoost, LightGBM, CatBoost, and ensemble learning on the Ames Housing dataset.
+# House Prices Prediction using Machine Learning
+An end-to-end machine learning project to predict residential house prices using regression and ensemble learning.
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikitlearn)
+![XGBoost](https://img.shields.io/badge/XGBoost-Gradient%20Boosting-green)
+![LightGBM](https://img.shields.io/badge/LightGBM-Boosting-brightgreen)
+![CatBoost](https://img.shields.io/badge/CatBoost-Boosting-yellow)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
 ## Overview
 This project predicts residential house prices using the Ames Housing dataset from Kaggle.
@@ -22,6 +29,19 @@ Target Variable:
 - SalePrice
 
 
+## Repository Structure
+
+```text
+House-Prices-Prediction/
+│
+├── House_Prices_Prediction.ipynb
+├── README.md
+├── requirements.txt
+├── submission_ensemble_all.csv
+└── images/
+```
+
+
 ## Exploratory Data Analysis
 The following analyses were performed:
 
@@ -30,6 +50,10 @@ The following analyses were performed:
 - Missing Value Analysis
 - Outlier Detection
 - Feature Relationships
+
+
+## Correlation Heatmap
+![Correlation Heatmap](images/correlation_heatmap.png)
 
 
 ## Data Preprocessing
@@ -72,6 +96,10 @@ to reduce skewness and improve model performance.
 - Ensemble Learning
 
 
+## Feature Importance
+![Feature Importance](images/feature_importance.png)
+
+
 ## Hyperparameter Tuning
 RandomizedSearchCV with 5-Fold Cross Validation was used for tuning:
 
@@ -82,12 +110,14 @@ RandomizedSearchCV with 5-Fold Cross Validation was used for tuning:
 
 
 ## Model Performance
-| Model | Kaggle Score |
-|---------|-------------|
-| XGBoost | 0.13290 |
-| LightGBM | 0.13144 |
-| CatBoost | 0.13159 |
-| **Ensemble (XGBoost + LightGBM + CatBoost)** | **0.12781** |
+| Model             | Validation RMSE | Kaggle Score |
+| ----------------- | --------------: | -----------: |
+| Linear Regression |          0.1326 |            - |
+| Random Forest     |          0.1490 |            - |
+| XGBoost           |          0.1233 |      0.13290 |
+| LightGBM          |          ~0.123 |      0.13144 |
+| CatBoost          |          0.1234 |      0.13159 |
+| **Ensemble**      |               - |  **0.12781** |
 
 
 ## Technologies Used
@@ -102,6 +132,13 @@ RandomizedSearchCV with 5-Fold Cross Validation was used for tuning:
 - CatBoost
 
 
+## Key Results
+- Achieved a Kaggle leaderboard score of **0.12781** using an ensemble of XGBoost, LightGBM, and CatBoost.
+- Performed feature engineering by creating `HouseAge`, `YearsSinceRemodel`, `TotalSF`, and `TotalBathrooms`.
+- Tuned multiple gradient boosting models using RandomizedSearchCV with 5-fold cross-validation.
+- Compared baseline and advanced machine learning models to evaluate performance improvements.
+
+
 ## Future Improvements
 - Weighted ensemble learning
 - Stacking
@@ -111,10 +148,10 @@ RandomizedSearchCV with 5-Fold Cross Validation was used for tuning:
 
 
 ## Kaggle Competition
-House Prices: Advanced Regression Techniques
-https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques
+🔗 [House Prices: Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)
 
 
 ## Author
+**Anshika**
 
-Anshika
+Feel free to connect or provide feedback through GitHub.
