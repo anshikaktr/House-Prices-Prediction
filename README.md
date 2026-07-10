@@ -20,6 +20,9 @@ Predict the final sale price of residential homes in Ames, Iowa using various pr
 
 
 ## Dataset
+The dataset used in this project is publicly available through the Kaggle House Prices competition.
+[Download Dataset](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data)
+
 - Training samples: 1460
 - Test samples: 1459
 - Features: 79 (before preprocessing)
@@ -27,18 +30,7 @@ Predict the final sale price of residential homes in Ames, Iowa using various pr
 Target Variable:
 - SalePrice
 
-
-## Repository Structure
-
-```text
-House-Prices-Prediction/
-│
-├── House_Prices_Prediction.ipynb
-├── README.md
-├── requirements.txt
-├── submission_ensemble_all.csv
-└── images/
-```
+> **Note:** The original dataset is not included in this repository and can be downloaded directly from the Kaggle competition page.
 
 
 ## Exploratory Data Analysis
@@ -141,7 +133,7 @@ RandomizedSearchCV with 5-Fold Cross Validation was used for tuning:
 ## Future Improvements
 - Weighted ensemble learning
 - Stacking
-- Bayesian Hyperparameter Optimization (Optuna)
+- Bayesian Hyperparameter Optimisation (Optuna)
 - Additional Feature Engineering
 - Streamlit Deployment
 
