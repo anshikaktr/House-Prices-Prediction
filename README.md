@@ -6,7 +6,6 @@ An end-to-end machine learning project to predict residential house prices using
 ![XGBoost](https://img.shields.io/badge/XGBoost-Gradient%20Boosting-green)
 ![LightGBM](https://img.shields.io/badge/LightGBM-Boosting-brightgreen)
 ![CatBoost](https://img.shields.io/badge/CatBoost-Boosting-yellow)
-![License](https://img.shields.io/badge/License-MIT-blue)
 
 ## Overview
 This project predicts residential house prices using the Ames Housing dataset from Kaggle.
